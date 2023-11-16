@@ -126,7 +126,7 @@ pub use thread_reader::thread_reader;
 #[cfg(fuzzing)]
 const BUFSIZE: usize = 64;
 #[cfg(not(fuzzing))]
-const BUFSIZE: usize = 68 * 1024;
+const BUFSIZE: usize = 68 * 1024 * 128;
 
 /// Parser for fastq files.
 pub struct Parser<R: Read> {
